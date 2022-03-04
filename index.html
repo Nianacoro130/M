@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="shortcut icon" href="https://img.icons8.com/dusk/64/000000/apple-music.png"/>
+    <title>Musique</title>
+</head>
+<body>
+    <div class="leftbackground">
+        <p>ÉCOUTEZ !! <i class="fa-solid fa-music fa-3x"></i></p>
+    </div>
+
+    
+    <div class="musicbox">
+        <div class="ecran">
+            <div class="mute" id="mute"><i class="fa-solid fa-volume-xmark"></i></div>
+            <div class="autoplaysound" id="autoplaysound"><i class="fa-solid fa-shuffle"></i></div>
+            <img id="piste_image">
+            <div class="menutrack">
+                <p id="present">1</p>
+                <p>/</p>
+                <p id="total">5</p>
+            </div>
+            <p id="volume_show">90</p>
+
+            <p id="titre">titre musique</p>
+            <p id="artist">nom artiste</p>
+
+            <div class="duree">
+                <input type="range" min="0" max="100" value="0" id="duree_slider"  onchange="change_duree()">
+             </div>
+
+            <div class="volume">
+                <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+             </div>
+            
+        </div>
+        <div class="boutons"><button id="auto" onclick="JouerPisteAuto()"></button>
+            <div class="btnleft">
+                <button class="btnmode"  onclick="Musique_precedent()"  id="pre"><i class="fa-solid fa-backward-fast fa-xl"></i></button>
+            </div>
+            <div class="btnright">
+                <button class="btnmode" onclick="Musique_suivant()" id="next"><i class="fa-solid fa-forward-fast fa-xl"></i></button>
+            </div>
+
+            <div class="btnplus">
+                <button class="btnmode" onclick="VolumeMax()" id="volmax"><i class="fa-solid fa-volume-high fa-xl"></i></button>
+            </div>
+
+            <div class="btnmoins">
+                <button class="btnmode" onclick="VolumeMin()" ondblclick="mute_sound()" id ="volmin"><i class="fa-solid fa-volume-low fa-xl"></i></button>
+            </div> 
+
+            <div class="btnplay">
+                <button class="play" onclick="JustPlay()" id="play"><i class="fa-solid fa-circle-play fa-5x" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/music.js"></script>
+</body>
+</html>

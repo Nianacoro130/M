@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+
+     border: none; 
+}
+
+
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 150px;
+}
+
+
+
+ div.leftbackground {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: pink;
+    z-index: -1;
+} 
+
+div.leftbackground p {
+    position: relative;
+    padding-top: 300px;
+    /* background-color: aqua;  */
+    color :black;
+    font-family: 'impact';
+    font-size: 2.8em;
+    z-index: 1;
+}
+
+div.musicbox {
+    position: relative;
+    padding-top: 50px;
+    display : flex;
+    justify-content: center;
+    width: 350px;
+    height: 340px;
+    background-color : rgb(219, 198, 198);
+    border-radius: 20px;
+    box-shadow: rgb(114, 116, 114) 5px;
+    z-index: 1;
+}
+
+div.ecran {
+    position: relative;
+    background-color: black;
+    width: 90%;
+    height: 150px;
+    border-radius: 5px;
+
+}
+
+div.boutons {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   bottom: 30px;
+   background-color: azure;
+   width: 50% ;
+   height: 150px;
+   border-radius: 80%;
+}
+
+div.btnplay {
+    display: flex;
+   position: absolute;
+   bottom: 25px;
+    background-color: rgb(7, 19, 19); 
+   width: 65% ;
+   height: 100px;
+   border-radius: 80%;
+   justify-content: center;
+}
+
+button.play {
+    color: azure;
+    background: none;
+    cursor :pointer;
+}
+
+div.btnleft{
+    position: absolute;
+    left: 2px;
+    top:65px;
+    width:30px;
+    height:30px;
+
+}
+
+div.btnright{
+    position: absolute;
+    right: 2px;
+    top:65px;
+    width:20px;
+    height:30px;
+    
+}
+
+
+button.play {
+    color: azure;
+    background: none;
+    cursor :pointer;
+}
+
+
+div.btnplus {
+    position: absolute;
+    top:3px;
+}
+
+div.btnmoins {
+    position: absolute;
+    bottom: 3px;
+}
+button.btnmode {
+    color : black;
+    background: none;
+    cursor :pointer;
+}
+
+div.duree {
+    position: absolute;
+    top: 90px;
+    left: 170px;
+    font-size: small;
+}
+
+div.volume {
+    position: absolute;
+    bottom : 1px;
+    left: 90px;
+    
+}
+
+div.menutrack {
+    position :absolute;
+    right: 0;
+    top:0;
+    color: beige;
+    font-size: 0.9em;
+
+}
+
+p#titre  {
+    position: absolute;
+    top : 40px;
+    left:170px;
+    color: beige;
+    font-size: large;
+
+}
+
+p#artist {
+    position: absolute;
+    top : 65px;
+    left:209px;
+    color: beige;
+    font-size:small ;
+
+}
+
+img#piste_image {
+    width: 150px;
+    position: absolute;
+    border-radius: 5px;
+    top: 5px;
+    left : 5px
+    
+}
+
+
+div.menutrack{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    color: #fff;
+    border-radius: 5px;
+    background: rgba(122, 93, 248, 0.2);
+  }
+  div.menutrack p:nth-child(2){
+      margin: 0 5px;
+  }
+
+
+  input[type="range"] {
+	-webkit-appearance: none;
+	outline: none;
+	height: 2px;
+}
+input[type="range"]::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	 height: 5px; 
+	 width: 10px; 
+	background: skyblue;
+	border-radius: 50%;
+	cursor: pointer;
+}
+div.input[type=range]{
+	 width: 24%; 
+}
+
+
+p#volume_show {
+    position : absolute;
+    bottom : 10px;
+    left:150px;
+    color :skyblue;
+    font-size:0.8em;
+    
+
+}
+
+
+div.mute , div.autoplaysound{
+    display: flex;
+    visibility: hidden;
+    padding: 10px 0px 5px 0px;
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    top:50px;
+    left: 100px;
+    width: 100px;
+    height: 25px;
+    z-index: 2;
+    background-color: rgba(211, 195, 195, 0.918);
+    border-radius: 10px;
+}
+
+div.mute {
+    color: rgb(245, 60, 60);
+}
+
+div.autoplaysound{
+    color:rgb(34, 18, 128);
+    content: 'activate';
+}
+
+
+button#auto {
+    width: 80%;
+    background: none;
+    border-radius: 107%;
+    cursor: pointer;
+    
+
+}
