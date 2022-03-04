@@ -1,6 +1,6 @@
 # musique
 
-# USE
+#use
 
 Pistes de 5 musiques. 
 Un bouton central pour jouer la musique et la mettre en pause. 
